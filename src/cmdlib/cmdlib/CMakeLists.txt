@@ -1,12 +1,12 @@
-set(target_name cmdlib)
+set(target_name cmd)
 
 add_library(${target_name} STATIC
   cmdlib/parser.cpp
   cmdlib/parser.hpp
-  cmdlib/indexer.cpp
-  cmdlib/indexer.hpp
-  cmdlib/searcher.cpp
-  cmdlib/searcher.hpp)
+  cmdlib/stack.cpp
+  cmdlib/stack.hpp
+  cmdlib/calculator.cpp
+  cmdlib/calculator.hpp)
 
 include(CompileOptions)
 set_compile_options(${target_name})
