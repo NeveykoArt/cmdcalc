@@ -1,16 +1,16 @@
-----#Конфигурация
+----#Configure
 
 cmake --preset debug
 
 cmake --preset release
 
-----#Сборка
+----#Build
 
 cmake --build --preset debug
 
 cmake --build --preset release
 
-----#Запуск
+----#PowerOn
 
 ./build/debug/bin/cmdcalc --input "-1.1 - (5 + 2 * (2 + 3)) / 10"
 
